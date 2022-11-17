@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <p>Introduzca el número de noches:</p>
+    <input id="numberOfNights" type="text" size="5">
+    <select name="" id="citysSelection">
+        <option value="Oviedo">Oviedo</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Barcelona">Barcelona</option>
+    </select>
+    <button id="calculatePrice">Calcular coste</button>
+    <div>
+        <p>Coste hotel:</p>
+        <input type="text" id="priceHotel">
+        <p>Coste viaje:</p>
+        <input type="text" id="priceTicket">
+        <p>Coste alquiler de coche:</p>
+        <input type="text" id="priceCar">
+        <p>Coste total:</p>
+        <input type="text" id="priceTotal">
+    </div>
+
     <script src="./main.js"></script>
 </body>
+
 </html>
