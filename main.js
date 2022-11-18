@@ -55,22 +55,25 @@ function costeAvion(num) {
             return barcelonaCity
         }
     }
+}
 
-    function CosteAlquilerCoche(num) {
-        let totalCar = num * 40
-        if (num < 3) {
-            return totalCar
-        } else if (num > 2 && num < 7) {
-            return totalCar - 20
-        } else {
-            return totalCar - 50
-        }
-    }
 
-    inputCalculatePrice.onclick = () => {
-        inputPriceCar.value = CosteAlquilerCoche(inputNumberofNights.value)
-        inputPriceTicket.value = costeAvion(inputNumberofNights.value)
-        inputPriceHotel.value = costeHotel(inputNumberofNights)
+function CosteAlquilerCoche(num) {
+    let totalCar = num * 40
+    if (num < 3) {
+        return totalCar
+    } else if (num > 2 && num < 7) {
+        return totalCar - 20
+    } else {
+        return totalCar - 50
     }
+}
+
+inputCalculatePrice.onclick = () => {
+    inputPriceCar.value = CosteAlquilerCoche(inputNumberofNights.value)
+    inputPriceTicket.value = costeAvion(inputNumberofNights.value)
+    inputPriceHotel.value = costeHotel(inputNumberofNights.value)
     inputPriceTotal.value = (inputPriceHotel.value * 1) + (inputPriceCar.value * 1) + (inputPriceTicket.value * 1)
 }
+
+
